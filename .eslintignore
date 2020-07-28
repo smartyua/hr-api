@@ -1,0 +1,7 @@
+build/**
+docs/**
+data/**
+coverage/**
+coverage
+node_modules/**
+counter.js

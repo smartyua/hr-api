@@ -1,0 +1,50 @@
+{
+  "extends": "airbnb-base",
+  "plugins": ["promise", "json", "unicorn"],
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "strict": 0,
+    "max-len": ["error", {
+      "code": 90,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+    "import/no-dynamic-require": 0,
+    "indent": ["error", 2],
+    "arrow-parens": ["error", "as-needed"],
+    "no-underscore-dangle": 0,
+    "comma-dangle": ["error", "never"],
+    "no-use-before-define": "error",
+    "no-console": "warn",
+    "camelcase": 0,
+    "max-classes-per-file": 0,
+    "no-plusplus": 0,
+    "no-minusminus": 0,
+    "no-unused-expressions": 0,
+    "object-curly-newline": 0,
+    "function-paren-newline": ["error", "consistent"],
+    "no-return-await": 0,
+    "curly": [2, "all"],
+    "unicorn/no-abusive-eslint-disable": 0,
+    "max-params": ["error", 6],
+    "max-depth": ["error", 3],
+    "promise/always-return": "error",
+    "promise/catch-or-return": "error",
+    "promise/param-names": "error",
+    "promise/no-return-wrap": "error",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next", "ignoreRestSiblings": true }],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["result", "res"] }
+    ],
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }]
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "hr-api",
+  "version": "1.0.0-development",
+  "private": true,
+  "description": "HR API",
+  "title": "POC for HR skills matching",
+  "engines": {
+    "node": ">=14.6.0"
+  },
+  "contributors": [
+    {
+      "name": "Grigoriy Kylypko",
+      "email": "smartyua@gmail.com"
+    }
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=local nodemon src/index.js",
+    "start": "cross-env NODE_ENV=production nodemon src/index.js",
+    "lint": "eslint --ignore-path .eslintignore .",
+    "test": "NODE_ENV=test jest --config ./jest.unit.js",
+    "test:coverage": "NODE_ENV=test jest --config ./jest.unit.js --coverage",
+    "spec": "NODE_ENV=test jest ./__tests__/spec/*.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.5.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.4",
+    "eslint-plugin-unicorn": "21.0.0",
+    "jest": "^26.1.0",
+    "jest-config": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "prettier-eslint": "^11.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "chunk": "0.0.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "entities": "^2.0.3",
+    "express": "4.17.1",
+    "fuse.js": "^6.4.1",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.19",
+    "moment": "^2.27.0",
+    "multer": "^1.4.2",
+    "pino": "^6.4.1",
+    "pino-pretty": "^4.1.0",
+    "require-dir": "^1.2.0",
+    "striptags": "^3.1.1",
+    "supertest": "^4.0.2",
+    "tmp": "^0.2.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "temp/*"
+    ],
+    "delay": "100"
+  }
+}
