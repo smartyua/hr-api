@@ -19,6 +19,7 @@ CDN
 CentOS
 CFEngine
 Chef
+CircleCI
 CI/CD
 Common Lisp
 Consul
@@ -62,6 +63,7 @@ iptables
 Istio
 ITIL
 JConsole
+Jenkins
 Kerberos
 Kernel module
 Kubernetes

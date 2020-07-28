@@ -36,7 +36,7 @@ const parseFilePDF = filePath => new Promise((resolve, reject) => {
 });
 
 (async () => {
-  const pdf = './test-examples/Eugene Chumachenko.pdf';
+  const pdf = './test-examples/Dmytro Bubon - Senior Full-Stack Developer _ Tech Lead (1).pdf';
   const response = await parseFilePDF(pdf);
   const match = testText(response);
   console.log(match);
