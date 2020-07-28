@@ -10,7 +10,7 @@ const loadData = () => {
     return data;
   }
 
-  console.log(`read seed data - ${basePath}`);
+  console.log(`Read seed data - ${basePath}`);
   const files = fs.readdirSync(basePath);
 
   files.forEach(file => {
