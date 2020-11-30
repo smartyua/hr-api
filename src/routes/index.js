@@ -14,6 +14,6 @@ const { upload } = require('../endpoints/upload');
 const { matchCV } = require('../endpoints/match');
 
 router.post('/upload', uploadJFile, upload);
-router.get('/match', matchCV);
+router.post('/match', matchCV);
 
 module.exports = router;

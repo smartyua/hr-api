@@ -8,7 +8,6 @@ const chalk = require('chalk');
 const app = require('./app');
 const config = require('../config');
 const { pinoLogger } = require('./middleware/logger');
-const { loadData } = require('./endpoints/data-loader');
 
 const { PORT, NODE_ENV } = config;
 
@@ -21,7 +20,6 @@ console.log(`NODE_ENV = ${NODE_ENV}\n`);
 
 (async () => {
   try {
-    loadData();
     app.listen(PORT, () => pinoLogger.info(chalk.green(`START UP LOADING (port - ${PORT})`)));
   } catch (error) {
     pinoLogger.error(error);
