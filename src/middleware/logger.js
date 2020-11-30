@@ -7,7 +7,7 @@ const { NODE_ENV } = config;
 const pinoLogger = pino({
   name: config.name,
   crlf: false,
-  // level: NODE_ENV !== 'production' ? 'trace' : 'warn',
+  level: NODE_ENV !== 'production' ? 'trace' : 'warn',
   enabled: NODE_ENV !== 'test',
   prettyPrint: NODE_ENV !== 'production' ? {
     translateTime: true,

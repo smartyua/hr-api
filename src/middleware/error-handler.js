@@ -7,8 +7,6 @@ const { pinoLogger } = require('./logger');
 
 // eslint-disable-next-line no-unused-vars
 const errorHandler = (error, req, res, next) => {
-  console.log(error);
-
   const response = {
     message: get(error, 'message') || defaultMessage,
     details: get(error, 'details'),
